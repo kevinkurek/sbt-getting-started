@@ -29,6 +29,8 @@ lazy val api = project
     libraryDependencies ++= Dependencies.apiDependencies
   )
 
+libraryDependencies += "org.apache.commons" % "commons-compress" % "1.18"
+
 
 //resolvers += Resolver.JCenterRepository
 //lazy val test = project.settings(
