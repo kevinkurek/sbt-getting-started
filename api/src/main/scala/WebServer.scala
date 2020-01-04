@@ -9,6 +9,7 @@ object WebServer extends HttpApp {
         complete(HttpEntity(ContentTypes.`application/json`, Forex.getRatesAsJson()))
       }
     }
+//  def route = path("hello") {  get { complete("Hello, World!")  }}
 
   def main(args: Array[String]): Unit = {
     val port: Int = sys.env.getOrElse("PORT", "8080").toInt
